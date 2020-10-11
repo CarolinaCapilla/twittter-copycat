@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tweeet:</strong>
+  <%= @tweeet.tweeet %>
+</p>
+<%# <% if current_user == tweeet.user %> %>
+  <%= link_to 'Edit', edit_tweeet_path(@tweeet) %> |
+  <%= link_to 'Back', tweeets_path %>
+<%# <% end %> %>
