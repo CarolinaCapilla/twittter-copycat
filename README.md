@@ -12,6 +12,7 @@ Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS
 - [ ] Only Tweeets author can *edit or delete* 
 - [ ] Users can *like* Tweeets using **Likeable** gem
 - [ ] Users can leave comments in other's Tweeets
+- [ ] Omniauth Google && Facebook sign in/login
 
 
 ## Gems
