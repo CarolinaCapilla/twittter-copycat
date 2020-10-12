@@ -19,6 +19,7 @@ class TweeetsController < ApplicationController
 
   def create
     @tweeet = Tweeet.new(tweeet_params)
+    @tweeet.user = current_user
 
     if @tweeet.save
       redirect_to root_path, notice: 'Tweeet was successfully created.'
@@ -30,7 +31,7 @@ class TweeetsController < ApplicationController
 
   def update
     if @tweeet.update(tweeet_params)
-      redirect_to @tweeet, notice: 'Tweeet was successfully updated.'
+      redirect_to root_path, notice: 'Tweeet was successfully updated.'
     else
       render :edit
     end
@@ -38,7 +39,7 @@ class TweeetsController < ApplicationController
 
   def destroy
     @tweeet.destroy
-    redirect_to tweeets_url, notice: 'Tweeet was successfully destroyed.'
+    redirect_to root_path, notice: 'Tweeet was successfully destroyed.'
   end
 
   private
