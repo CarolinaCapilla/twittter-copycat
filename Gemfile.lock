@@ -58,6 +58,8 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (10.0.1.0)
+      execjs
     bcrypt (3.1.16)
     better_errors (2.8.3)
       coderay (>= 1.0.0)
@@ -93,7 +95,10 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubi (1.9.0)
     eventmachine (1.2.7)
+    execjs (2.7.0)
     ffi (1.13.1)
+    font-awesome-sass (5.13.0)
+      sassc (>= 1.11)
     formatador (0.2.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -256,12 +261,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   better_errors (~> 2.8, >= 2.8.3)
   bootsnap (>= 1.4.2)
   bulma-rails (~> 0.6.1)
   byebug
   capybara (>= 2.15)
   devise (~> 4.7, >= 4.7.3)
+  font-awesome-sass
   gravatar_image_tag (~> 1.2)
   guard (~> 2.16, >= 2.16.2)
   guard-livereload (~> 2.5)
