@@ -1,5 +1,6 @@
 class TweeetsController < ApplicationController
   before_action :set_tweeet, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @tweeets = Tweeet.all.order("created_at DESC")
@@ -20,7 +21,7 @@ class TweeetsController < ApplicationController
     @tweeet = Tweeet.new(tweeet_params)
 
     if @tweeet.save
-      redirect_to @tweeet, notice: 'Tweeet was successfully created.'
+      redirect_to root_path, notice: 'Tweeet was successfully created.'
     else
       render :new
     end
