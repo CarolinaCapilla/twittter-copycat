@@ -17,7 +17,7 @@ Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS
 - [x] Customised registration forms
 - [x] Users can create a Tweeet only after signing in
 - [x] Only Tweeets author can *edit or delete* 
-- [ ] Users can *like* Tweeets using ~~**Likeable**~~ **Act as favoritor** gem
+- [ ] Users can *like* or *dislike* Tweeets using ~~**Likeable**~~ **Act as favoritor** gem
 - [ ] Users can leave Comments in other's Tweeets
 - [ ] Users can see Trends
 - [ ] Users can attach images/videos to Tweeets and Comments
