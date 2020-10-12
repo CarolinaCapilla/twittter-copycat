@@ -1,7 +1,11 @@
 <section class="section">
   <div class="container">
     <div class="columns">
+    <% if user_signed_in? %>
+      <%= render 'shared/profile' %>
+    <% else %>
       <%= render 'shared/trends' %>
+    <% end %>
       <%= render 'shared/feed' %>
       <%= render 'shared/who_to_follow' %>
     </div>
