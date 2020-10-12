@@ -5,13 +5,14 @@ This project will be as stated in the title a copycat of well-known social netwo
 
 Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS and JS
 
-## Features
+## Features and To-Do's
 
-- [ ] CRUD for Tweeets
-- [ ] User authentication using **Devise** gem
-- [ ] Only Tweeets author can *edit or delete* 
-- [ ] Users can *like* Tweeets using **Likeable** gem
+- [x] CRUD for Tweeets
+- [x] User authentication using **Devise** gem
+- [x] Only Tweeets author can *edit or delete* 
+- [ ] Users can *like* Tweeets using ~~**Likeable**~~ **Opinions** gem
 - [ ] Users can leave comments in other's Tweeets
+- [ ] Populate feed with real data rather than hard-coded
 - [ ] Omniauth Google && Facebook sign in/login
 
 
