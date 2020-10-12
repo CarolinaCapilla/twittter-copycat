@@ -1,7 +1,7 @@
 # Twittter-Copycat
 
 
-This project will be as stated in the title a copycat of well-known social network giant. As the real one is quite an elaborated application, I won't be implementing all the features available on it, instead will focus in CRUD, user authentication, web-design, implementing gems never used *see in gems list*
+This project will be as stated in the title a copycat of well-known social network giant. As the real one is quite an elaborated application, I won't be implementing all the features available on it, instead will focus in CRUD, user authentication, web-design, implementing gems never used [see in gems list](#gems)
 
 Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS and JS
 
