@@ -1,21 +1,20 @@
 class TweeetsController < ApplicationController
-  before_action :set_tweeet, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_tweeet, only: %i[show edit update destroy]
+  before_action :authenticate_user!, except: %i[index show]
 
   def index
-    @tweeets = Tweeet.all.order("created_at DESC")
+    @tweeets = Tweeet.all.order('created_at DESC')
     @tweeet = Tweeet.new
+    @user = current_user
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @tweeet = Tweeet.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @tweeet = Tweeet.new(tweeet_params)
@@ -27,7 +26,6 @@ class TweeetsController < ApplicationController
       render :new
     end
   end
-
 
   def update
     if @tweeet.update(tweeet_params)
@@ -43,11 +41,12 @@ class TweeetsController < ApplicationController
   end
 
   private
-    def set_tweeet
-      @tweeet = Tweeet.find(params[:id])
-    end
 
-    def tweeet_params
-      params.require(:tweeet).permit(:tweeet)
-    end
+  def set_tweeet
+    @tweeet = Tweeet.find(params[:id])
+  end
+
+  def tweeet_params
+    params.require(:tweeet).permit(:tweeet)
+  end
 end
