@@ -6,6 +6,7 @@ class TweeetsController < ApplicationController
     @tweeets = Tweeet.all.order('created_at DESC')
     @tweeet = Tweeet.new
     @user = current_user
+    # @user2 = User.new
   end
 
   def show; end
