@@ -1,4 +1,5 @@
 <nav class="navbar is-info">
+
   <div class="navbar-brand">
     <%= link_to root_path, class: "navbar-item" do %>
       <h1 class="title is-5">Twittter</h1>
@@ -15,9 +16,9 @@
       <div class="navbar-item">
         <div class="field is-grouped">
           <p class="control">
-          <% if user_signed_in? %>
-            <%= link_to 'New Tweeet', root_path, class: "button is-info is-inverted" %>
-          </p>
+            <% if user_signed_in? %>
+              <%= link_to 'New Tweeet', root_path, class: "button is-info is-inverted" %>
+            </p>
             <p class="control">
               <%= link_to current_user.name, edit_user_registration_path, class: "button is-info" %>
             </p>
