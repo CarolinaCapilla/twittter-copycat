@@ -1,13 +1,15 @@
 <div class="column is-half">
-  <article class="media box">
-    <figure class="media-left">
-      <p class="image is-64x64">
-        <img src="https://bulma.io/images/placeholders/64x64.png"></p>
-      </figure>
-      <div class="media-content">
-        <%= render 'tweeets/form' %>
-      </div>
-    </article>
+  <% if user_signed_in? %>
+    <article class="media box">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/64x64.png"></p>
+        </figure>
+        <div class="media-content">
+          <%= render 'tweeets/form' %>
+        </div>
+      </article>
+    <% end %>
 
     <% @tweeets.each do  |tweeet| %>
       <div class="box">
@@ -25,6 +27,7 @@
                 </small><br/>
                 <p><%= tweeet.tweeet %></p>
               </div>
+              <% if user_signed_in? %>
               <nav class="level">
                 <div class="level-left is-mobile">
                   <%= link_to tweeet, class: 'level-item' do %>
@@ -45,6 +48,7 @@
                     <% end %>
                   <% end %>
                   </div>
+                  <% end %>
                 </nav>
               </div>
             </article>
