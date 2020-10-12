@@ -30,4 +30,4 @@ Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS
 * Prettier
 * Act as Favoritor
 * Font Awesome
-### More to come
+#### More gems to come
