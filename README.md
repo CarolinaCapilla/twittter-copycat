@@ -15,6 +15,7 @@ Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS
 - [ ] CRUD for Comments
 - [x] User authentication using **Devise** gem
 - [x] Customised registration forms
+- [ ] Attach avatar to user through Active Storage
 - [x] Users can create a Tweeet only after signing in
 - [x] Only Tweeets author can *edit or delete* 
 - [ ] Users can *like* or *dislike* Tweeets using ~~**Likeable**~~ **Act as favoritor** gem
