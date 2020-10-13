@@ -16,7 +16,6 @@
         </div>
       </article>
     <% end %>
-
     <% @tweeets.each do  |tweeet| %>
       <div class="box">
         <article class="media">
@@ -41,12 +40,19 @@
                 </small><br/>
                 <p><%= tweeet.tweeet %></p>
               </div>
+              <%= render @tweeet.comments %>
+
               <% if user_signed_in? %>
                 <nav class="level">
                   <div class="level-left is-mobile">
                     <%= link_to tweeet, class: 'level-item' do %>
                       <span class="icon">
                         <i class="fa fa-link" aria-hidden="true"></i>
+                      </span>
+                    <% end %>
+                    <%= link_to new_tweeet_comment_path(tweeet), class: 'level-item' do %>
+                      <span class="icon">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
                       </span>
                     <% end %>
                     <% if current_user == tweeet.user %>
