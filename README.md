@@ -12,7 +12,7 @@ Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS
 
 - [x] CRUD for Tweeets
 - [x] CRUD for Users
-- [ ] CRUD for Comments
+- [x] CRUD for Comments
 - [x] User authentication using **Devise** gem
 - [x] Customised registration forms
 - [x] Attach avatar to user through Active Storage
