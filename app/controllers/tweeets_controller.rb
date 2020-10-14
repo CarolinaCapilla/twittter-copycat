@@ -7,7 +7,9 @@ class TweeetsController < ApplicationController
     @tweeet = Tweeet.new
   end
 
-  def show; end
+  def show
+    @comment = Comment.new
+  end
 
   def new
     @tweeet = Tweeet.new
