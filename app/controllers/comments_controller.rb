@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     @comment.tweeet = Tweeet.find(params[:tweeet_id])
     @comment.user = current_user
     if @comment.save
-      redirect_to @comment.tweet
+      redirect_to @comment.tweeet
     else
       render :new
     end

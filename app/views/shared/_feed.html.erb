@@ -64,10 +64,12 @@
                 <% end %>
               </nav>
             </div>
-            <div class="level-right">
-              <% tweeet.comments.count == 1 ? comment = 'Comment' : comment = 'Comments' %>
-              <%= tweeet.comments.count %>
-              <%= comment %>
+            <div class="level-right has-text-grey-light">
+              <small>
+                <% tweeet.comments.count == 1 ? comment = 'Comment' : comment = 'Comments' %>
+                <%= tweeet.comments.count %>
+                <%= comment %>
+              </small>
             </div>
           </article>
         </div>
