@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     @comment.tweeet = Tweeet.find(params[:tweeet_id])
     @comment.user = current_user
     if @comment.save
-      redirect_to root_path
+      redirect_to @comment.tweet
     else
       render :new
     end
@@ -32,7 +32,7 @@ class CommentsController < ApplicationController
   def update
     @comment.update(comments_params)
     if @comment.save
-      redirect_to root_path
+      redirect_to @comment.tweeet
     else
       render :edit
     end
@@ -40,7 +40,7 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment.destroy
-    redirect_to root_path
+    redirect_to @comment.tweeet
   end
 
   private
