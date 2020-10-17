@@ -2,20 +2,22 @@
   <p class="panel-heading has-text-centered has-text-weight-bold">Comments</p>
 </nav>
 <% @tweeet.comments.each do |comment| %>
-  <div class="box">
+  <div class="box margin-top">
     <article class="media">
+      <div class="media-left">
+        <figure class="avatar">
+          <%= image_tag comment.user.avatar %>
+        </figure>
+      </div>
       <div class="media-content">
         <div class="content">
-          <div class="avatar">
-            <%= image_tag comment.user.avatar %>
-            <small>
-              <%= comment.user.username %>
-            </small>
-            <br>
-              <strong>
-                <%= comment.comment %>
-              </strong>
-            </div>
+          <small>
+            <%= comment.user.username %>
+          </small>
+          <br>
+            <strong>
+              <%= comment.comment %>
+            </strong>
           </div>
           <% if current_user == comment.user %>
             <nav class="level">
@@ -31,11 +33,11 @@
                   </span>
                 <% end %>
               <% end %>
-            </nav>
-          </div>
-          <div class="media-rigth">
-            <%= comment.created_at.strftime("%d/%m/%Y") %>
-          </div>
+            </div>
+            <div class="level-right">
+              <%= comment.created_at.strftime("%d/%m/%Y") %>
+            </div>
+          </nav>
         </article>
       </div>
     <% end %>
