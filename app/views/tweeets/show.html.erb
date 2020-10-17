@@ -3,4 +3,32 @@
     <%= render 'comments/comments' %>
     <%= render 'comments/new' %>
   </div>
-</div>
+  <div class="column is-half">
+    <nav class="panel">
+      <p class="panel-heading has-text-centered has-text-weight-bold">Tweet</p>
+      <div class="box margin-top">
+        <article class="media">
+          <div class="media-left">
+            <figure class="avatar">
+              <%= image_tag @tweeet.user.avatar %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <small>
+                <%= @tweeet.user.username %>
+              </small>
+              <br>
+                <strong>
+                  <%= @tweeet.tweeet %>
+                </strong>
+              </div>
+            </div>
+            <div class="media-right">
+              <%= @tweeet.created_at.strftime("%d/%m/%Y") %>
+            </div>
+          </article>
+        </div>
+      </nav>
+    </div>
+  </div>

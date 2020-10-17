@@ -13,5 +13,15 @@
 
 .avatar img {
   height: 64px;
+  width: 64px;
+  border-radius: 50%;
 }
 
+.avatar-small img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.margin-top {
+  margin-top: 24px;
+}

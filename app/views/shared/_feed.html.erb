@@ -3,11 +3,11 @@
     <article class="media box">
       <figure class="media-left">
         <% if current_user.avatar.attached? %>
-          <p class="image is-64x64 avatar">
+          <p class="avatar">
             <%= image_tag current_user.avatar %>
           </p>
         <% else %>
-          <p class="image is-64x64 avatar">
+          <p class="avatar">
             <img class="is-rounded" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"></p>
           <% end %>
         </figure>
@@ -21,13 +21,13 @@
         <article class="media">
           <div class="media-left">
             <% if user_signed_in? || !user_signed_in? %>
-              <figure class="image is-64x64 avatar">
+              <figure class="avatar">
                 <% if tweeet.user.avatar.attached? %>
                   <%= image_tag tweeet.user.avatar %>
                 </figure>
               <% end %>
               <% elsif !current_user.avatar.attached? %>
-              <figure class="image is-64x64 avatar">
+              <figure class="is-64x64 avatar">
                 <img class="is-rounded" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt="no image found"></figure>
               <% end %>
             </div>
