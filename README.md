@@ -36,6 +36,5 @@ Built with RoR ![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby"), CSS
 * Simple form
 * Gravatar: avatar images
 * Prettier
-* Act as Favoritor
 * Font Awesome
 #### More gems to come
