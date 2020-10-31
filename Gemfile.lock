@@ -147,6 +147,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
+    prettier (0.20.1)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -273,6 +274,7 @@ DEPENDENCIES
   guard (~> 2.16, >= 2.16.2)
   guard-livereload (~> 2.5)
   listen (~> 3.2)
+  prettier
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)

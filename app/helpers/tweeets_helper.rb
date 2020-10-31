@@ -1,2 +1,1 @@
-module TweeetsHelper
-end
+module TweeetsHelper; end
